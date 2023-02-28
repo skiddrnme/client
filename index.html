@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Genius Charts Data</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Genius Charts Data</h1>
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Song</th>
+          <th>Artist</th>
+
+          <th>Genre</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Drivers License</td>
+          <td>Olivia Rodrigo</td>
+
+          <td>Pop</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Good Days</td>
+          <td>SZA</td>
+          <td>R&B</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Blinding Lights</td>
+          <td>The Weeknd</td>
+          <td>R&B</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Mood</td>
+          <td>24kGoldn feat. Iann Dior</td>
+          <td>Rap</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Positions</td>
+          <td>Ariana Grande</td>
+          <td>Pop</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Private Landing</td>
+          <td>Justin Bieber & Future</td>
+          <td>Rap</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Say You Won’t Let Go</td>
+          <td>James Arthur</td>
+          <td>R&B</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Until I Found You</td>
+          <td>Stephen Sanchez</td>
+          <td>Pop</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>TQG</td>
+          <td>KAROL G & Shakira</td>
+          <td>Pop</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Die For You (Remix)</td>
+          <td>The Weeknd</td>
+          <td>R&B</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Boy’s a liar Pt. 2</td>
+          <td>PinkPantheress & Ice Spice</td>
+          <td>Pop</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Kill Bill</td>
+          <td>SZA</td>
+          <td>R&B</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>Tattoo</td>
+          <td>Loreen</td>
+          <td>Pop</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Viva la Vida</td>
+          <td>Coldplay</td>
+          <td>Rock</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>DOT XXX</td>
+          <td>Watsky</td>
+          <td>Rap</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>Ballin’</td>
+          <td>Mustard & Roddy Ricch</td>
+          <td>Rap</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>Split</td>
+          <td>Yeat</td>
+          <td>Rap</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>A&W</td>
+          <td>Lana Del Rey</td>
+          <td>Rock</td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>Open Arms (Solo Version)</td>
+          <td>SZA</td>
+          <td>R&B</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>Forever</td>
+          <td>Lil Baby</td>
+          <td>Rap</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Выбрать категорию
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Какой жанр больше нравится?</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <button type="button" class="btn btn-dark">Рэп</button>
+            <button type="button" class="btn btn-warning">Рок</button>
+            <button type="button" class="btn btn-success">Поп</button>
+            <button type="button" class="btn btn-info">R&B</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-primary" onclick="downloadCSV()">
+              Download CSV
+            </button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
